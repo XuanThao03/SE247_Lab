@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<header>
+  <title>Form Đăng ký thông tin việc làm</title>
+</header>
+<body style="font-family: Arial, Helvetica, sans-serif">
+  <form>
+    <h1>ĐĂNG KÝ THÔNG TIN VIỆC LÀM</h1>
+    <h2>Thông tin cá nhân</h2>
+    <table>
+      <tr>
+        <td class="column1">
+          <p><label class="required">Họ và tên:</label></p>
+          <p>
+            <label class="required">Ngày tháng năm sinh:</label>
+          </p>
+          <p><label class="non-required">Giới tính:</label></p>
+          <p>
+            <label class="non-required">Tình trạng hôn nhân:</label>
+          </p>
+        </td>
+        <td class="column2" class="column2">
+          <p><input class="input-box" type="text" style="width: 40%" /></p>
+          <p><input class="input-box" type="text" style="width: 15%" /></p>
+          <p>
+            <select class="cbb" name="Gender" id="Gender">
+              <option value="Nam">Nam</option>
+              <option value="Nữ">Nữ</option>
+            </select>
+          </p>
+          <p>
+            <select class="cbb" name="Gender" id="Gender">
+              <option value="Nam">Độc thân</option>
+              <option value="Nữ">Đã kết hôn</option>
+            </select>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Thông tin liên lạc</h2>
+    <table>
+      <tr>
+        <td class="column1">
+          <p><label class="required">Địa chỉ:</label></p>
+          <p>
+            <label class="required">Tỉnh/Thành phố:</label>
+          </p>
+          <p><label class="non-required">Số điện thoại:</label></p>
+          <p>
+            <label class="non-required">Số điện thoại di động:</label>
+          </p>
+          <p>
+            <label class="required">Email:</label>
+          </p>
+        </td>
+        <td class="column2">
+          <p><input class="input-box" type="text" style="width: 75%" /></p>
+          <p><input class="input-box" type="text" style="width: 15%" /></p>
+          <p><input class="input-box" type="text" style="width: 15%" /></p>
+          <p><input class="input-box" type="text" style="width: 15%" /></p>
+          <p><input class="input-box" type="text" style="width: 25%" /></p>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Trình độ học vấn</h2>
+    <table>
+      <tr>
+        <td class="column1">
+          <p><label class="required">Trình độ học vấn:</label></p>
+          <p>
+            <label class="required">Thông tin về học vấn:</label>
+          </p>
+          <p><label class="non-required">Ngoại ngữ:</label></p>
+          <p>
+            <label class="non-required">Kỹ năng:</label>
+          </p>
+        </td>
+        <td class="column2">
+          <p>
+            <select class="cbb" name="Education" id="Education">
+              <option value="Chọn">Chọn</option>
+              <option value="Tiểu học">Tiểu học</option>
+              <option value="THCS">THCS</option>
+              <option value="THPT">THPT</option>
+              <option value="Đại học">Đại học</option>
+            </select>
+          </p>
+          <p class="textarea">
+            <textarea class="input-box" rows="3" cols="60" name="description">
+            </textarea>
+          </p>
+          <p class="textarea">
+            <textarea class="input-box" rows="3" cols="60" name="description">
+            </textarea>
+          </p>
+          <p class="textarea">
+            <textarea class="input-box" rows="3" cols="60" name="description">
+            </textarea>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Kinh nghiệm làm việc</h2>
+    <table>
+      <tr>
+        <td class="column1">
+          <p><label class="non-required">Số năm kinh nghiệm:</label></p>
+          <p>
+            <label class="non-required">Kinh nghiệm làm việc:</label>
+          </p>
+        </td>
+        <td class="column2">
+          <p><input class="input-box" type="text" style="width: 15%" /></p>
+          <p class="textarea">
+            <textarea class="input-box" rows="3" cols="60" name="description">
+            </textarea>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Mong muốn của bản thân</h2>
+    <table>
+      <tr>
+        <td class="column1">
+          <p><label class="non-required">Việc làm mong muốn:</label></p>
+          <p>
+            <label class="required">Mức lương thỏa thuận:</label>
+          </p>
+        </td>
+        <td class="column2">
+          <p class="textarea">
+            <textarea class="input-box" rows="3" cols="60" name="description">
+            </textarea>
+          </p>
+          <p><input class="input-box" type="text" style="width: 15%" /> VNĐ</p>
+        </td>
+      </tr>
+    </table>
+
+    <div style="text-align: center">
+      <input class="submit" type="submit" value="Gửi hồ sơ" />
+      <input class="submit" type="submit" value="Xóa Form" />
+    </div>
+  </form>
+</body>
+<style>
+  table {
+    margin: 10px 30px;
+    width: 100%;
+  }
+  h1 {
+    color: #007f02;
+    text-align: center;
+  }
+  h2 {
+    color: white;
+    background-color: #016634;
+    font-weight: 500;
+  }
+  .required::before {
+    content: "* ";
+    color: red;
+  }
+  .non-required {
+    color: #016634;
+    margin: 2px;
+  }
+  .required {
+    color: #016634;
+    margin: 2px;
+    text-align: center;
+  }
+  .input-box {
+    border: 1px solid #007f02;
+    margin-left: 10px;
+    padding: 2px;
+    width: 80%;
+  }
+  .cbb {
+    border-color: #007f02;
+    margin-left: 10px;
+    height: 25px;
+    padding: 2px;
+  }
+  p {
+    height: 35px;
+    color: #016634;
+  }
+  .textarea {
+    height: 65px;
+    color: #016634;
+  }
+  .submit {
+    margin: 15px;
+    padding: 5px;
+  }
+  .column1 {
+    width: 15%;
+    text-align: right;
+    vertical-align: top;
+  }
+  .column2 {
+    width: 85%;
+    vertical-align: top;
+  }
+</style>
