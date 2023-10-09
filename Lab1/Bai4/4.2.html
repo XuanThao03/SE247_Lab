@@ -1,0 +1,37 @@
+<p><strong>Mau 2</strong></p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chieu cao va do rong bang trong HTML</title>
+    <style>
+        table {
+            width: 600px; /* Đặt chiều rộng của bảng */
+            height: 300px;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        /* Giảm chiều cao của hàng 1 và 2 */
+        tr:nth-child(1),
+        tr:nth-child(2) {
+            height: 50px; /* Đặt chiều cao của hàng 1 và 2 */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Place a banner here</td>
+        </tr>
+        <tr>
+            <td>Link! Link! Link!</td>
+        </tr>
+        <tr>
+            <td>Content goes here</td>
+        </tr>
+    </table>
+</body>
+</html>
