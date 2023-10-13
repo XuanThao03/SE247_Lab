@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 12</title>
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif">
+    <table>
+      <thead>
+        <p class="title">ĐĂNG KÝ THÔNG TIN VIỆC LÀM</p>
+      </thead>
+      <tbody>
+        <form action="#" method="post">
+          <table class="section">
+            <thead>
+              <tr>
+                <th class="section-heading" colspan="2">THÔNG TIN CÁ NHÂN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label required-label">
+                  <label for="hovaten">Họ & tên:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <input
+                    style="width: 50%"
+                    type="text"
+                    id="hovaten"
+                    name="hovaten"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label required-label">
+                  <label for="ntns">Ngày tháng năm sinh:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <input
+                    style="width: 30%"
+                    type="text"
+                    id="ntns"
+                    name="ntns"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="gioitinh">Giới tính:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <select type="text" id="gioitinh" name="gioitinh">
+                    <option value="Nam">Nam</option>
+                    <option value="Nu">Nữ</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="honnhan">Tình trạng hôn nhân:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <select type="text" id="honnhan" name="honnhan">
+                    <option value="DocThan">Độc thân</option>
+                    <option value="KetHon">Kết hôn</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="section">
+            <thead>
+              <tr>
+                <th class="section-heading" colspan="2">THÔNG TIN LIÊN LẠC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label required-label">
+                  <label for="diachi">Địa chỉ:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <input
+                    style="width: 80%"
+                    type="text"
+                    id="diachi"
+                    name="diachi"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label required-label">
+                  <label for="tinhthanh">Tỉnh/Thành phố:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <input
+                    style="width: 30%"
+                    type="text"
+                    id="tinhthanh"
+                    name="tinhthanh"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="sdt">Số điện thoại:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <input style="width: 30%" type="text" id="sdt" name="sdt" />
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="didong">Số điện thoại di động:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <input
+                    style="width: 30%"
+                    type="text"
+                    id="didong"
+                    name="didong"
+                  />
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label required-label">
+                  <label for="email">Email:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <input
+                    style="width: 50%"
+                    type="text"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="section">
+            <thead>
+              <tr>
+                <th class="section-heading" colspan="2">TRÌNH ĐỘ HỌC VẤN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="required-label label">
+                  <label for="trinhdo">Trình độ học vấn:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <select type="text" id="trinhdo" name="trinhdo">
+                    <option value="DH">Đại học</option>
+                    <option value="THPT">THPT</option>
+                    <option value="THCS">THCS</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label required-label">
+                  <label for="thongtinhv">Thông tin học vấn:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <textarea
+                    name="thongtinhv"
+                    rows="3"
+                    cols="50"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="ngonngu">Ngôn ngữ:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <textarea name="ngonngu" rows="3" cols="50"></textarea>
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="kynang">Kỹ năng:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <textarea name="kynang" rows="3" cols="50"></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="section">
+            <thead>
+              <tr>
+                <th class="section-heading" colspan="2">
+                  KINH NGHIỆM LÀM VIỆC
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="namkinhnghiem">Số năm kinh nghiệm:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <input
+                    style="width: 30%"
+                    type="text"
+                    id="namkinhnghiem"
+                    name="namkinhnghiem"
+                  />
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="kinhnghiem">Kinh nghiệm làm việc:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <textarea name="kinhnghiem" rows="3" cols="50"></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="section">
+            <thead>
+              <tr>
+                <th class="section-heading" colspan="2">
+                  MONG MUỐN CỦA BẢN THÂN
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label">
+                  <label for="mongmuon">Việc làm mong muốn:</label>
+                </td>
+                <td style="flex: 0.7">
+                  <textarea name="mongmuon" rows="3" cols="50"></textarea>
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3" class="label required-label">
+                  <label for="luong">Mức lương thỏa thuận:</label>
+                </td>
+                <td style="flex: 0.7; display: flex; flex-direction: row">
+                  <input
+                    style="width: 30%"
+                    type="text"
+                    id="luong"
+                    name="luong"
+                    required
+                  />
+                  <p style="margin: 0 0 0 5px; color: darkgreen">VNĐ</p>
+                </td>
+              </tr>
+              <tr class="section-input">
+                <td style="flex: 0.3"></td>
+                <td style="flex: 0.7; display: flex; flex-direction: row">
+                  <button style="margin: 4px" type="submit">Gửi hồ sơ</button>
+                  <button style="margin: 4px" type="reset">Xóa Form</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </tbody>
+    </table>
+  </body>
+
+  <style>
+    .title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: green;
+    }
+
+    .section {
+      width: 50%;
+      margin: auto;
+    }
+
+    .section-heading {
+      background-color: darkgreen;
+      color: white;
+      padding: 5px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    textarea,
+    select,
+    input {
+      border: 1px solid yellowgreen;
+      color: darkgreen;
+    }
+
+    textarea:focus,
+    select:focus,
+    input:focus {
+      outline: none;
+      border: 1px solid green;
+    }
+
+    .label {
+      color: green;
+      text-align: right;
+      margin: 2px 5px 0 0;
+    }
+
+    .required-label::before {
+      content: "*";
+      color: red;
+      margin-right: 2px;
+    }
+
+    .section-input {
+      display: flex;
+    }
+  </style>
+</html>

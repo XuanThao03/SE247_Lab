@@ -1,0 +1,52 @@
+<p><strong>Mau 3</strong></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chieu cao va do rong bang trong HTML</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th><strong>Header 1</strong></th>
+        <th><strong>Header 2</strong></th>
+        <th><strong>Header 3</strong></th>
+      </tr>
+      <tr>
+        <td class="top-center">Row 1,Col 1</td>
+        <td>Row 1,Col 2</td>
+        <td class="bottom-center">Row 1,Col 3</td>
+      </tr>
+      <tr>
+        <td>Row 1,Col 1</td>
+        <td colspan="2">Row 2 Cell 2</td>
+      </tr>
+    </table>
+  </body>
+  <style>
+    table {
+      width: 600px;
+      height: 300px;
+      border: 4px solid black;
+    }
+    td {
+      width: 200px;
+      height: 100px;
+      border: 2px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    .top-center {
+      vertical-align: top;
+    }
+    .bottom-center {
+      vertical-align: bottom;
+    }
+    th {
+      background-color: blue;
+      border: 2px solid black;
+    }
+    tr:nth-child(3) td:nth-child(2) {
+      background-color: yellow;
+    }
+  </style>
+</html>
