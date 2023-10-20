@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FACFCF;
+  }
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #FACFCF;
+    padding: 10px;
+  }
+
+  header {
+    height: 100px;
+    background-color: #FACFCF;
+    color: #fff;
+    text-align: left;
+    line-height: 100px;
+    font-size: 30px;
+  }
+  footer {
+    clear: both;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  nav {
+    height: 30px;
+    background-color: #420000;
+    text-align: left;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+  }
+
+  nav li {
+    display: inline;
+    margin: 0 10px;
+  }
+
+  .left {
+    width: 204px;
+    float: left;
+    padding: 10px;
+  }
+
+  .content {
+    margin-left: 224px;
+    padding: 10px;
+  }
+  .highlight {
+    color: black; /* Đổi màu chữ thành màu đỏ */
+  }
