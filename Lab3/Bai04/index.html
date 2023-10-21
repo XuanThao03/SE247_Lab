@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <script>
+        function calculateAge() {
+            var birthYear = prompt("Nhập năm sinh của bạn:");
+            var currentYear = new Date().getFullYear();
+
+            if (!birthYear || isNaN(birthYear)) {
+                alert("Năm sinh không hợp lệ. Vui lòng nhập lại.");
+                calculateAge();
+                return;
+            }
+
+            var age = currentYear - parseInt(birthYear);
+
+            if (age < 0) {
+                alert("Năm sinh không hợp lệ. Vui lòng nhập lại.");
+                calculateAge();
+                return;
+            }
+
+            document.write("Năm sinh: " + birthYear + "<br>");
+            document.write("Tuổi: " + age);
+        }
+
+        calculateAge();
+    </script>
+</body>
+</html>

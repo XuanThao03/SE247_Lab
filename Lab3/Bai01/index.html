@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #nameInput {
+            font-weight: bold;
+        }
+
+        #ageInput {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function enterName() {
+            var name = prompt("Bạn hãy nhập vào tên:");
+            if (name != null) {
+                document.write("Tên: <span id='nameInput'>" + name + "</span><br>");
+                enterAge();
+            }
+        }
+
+        function enterAge() {
+            var age = prompt("bạn hãy nhập vào tuổi:");
+            if (age != null) {
+                document.write("Tuổi: <span id='ageInput'>" + age + "</span>");
+            }
+        }
+
+        enterName();
+    </script>
+</body>
+</html>

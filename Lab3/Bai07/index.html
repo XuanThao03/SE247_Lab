@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        function isPrime(n) {
+            if (n <= 1) return false;
+            if (n <= 3) return true;
+
+            if (n % 2 === 0 || n % 3 === 0) return false;
+
+            for (var i = 5; i * i <= n; i += 6) {
+                if (n % i === 0 || n % (i + 2) === 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        function containsInvalidCharacters(input) {
+            return /[.,/]/.test(input);
+        }
+
+        function checkPrime() {
+            var number = prompt("Nhập một số nguyên:");
+            var parsedNumber = parseFloat(number);
+
+            if (isNaN(parsedNumber) || Math.floor(parsedNumber) !== parsedNumber || containsInvalidCharacters(number)) {
+                alert("Số bạn nhập không phải là số nguyên hợp lệ. Vui lòng nhập lại.");
+                checkPrime();
+                return;
+            }
+
+            if (isPrime(parsedNumber)) {
+                document.write(parsedNumber + " là số nguyên tố.");
+            } else {
+                document.write(parsedNumber + " không phải là số nguyên tố.");
+            }
+        }
+
+        checkPrime();
+    </script>
+</body>
+</html>
